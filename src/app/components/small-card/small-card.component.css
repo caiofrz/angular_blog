@@ -1,0 +1,22 @@
+.small-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.small-card-image {
+  width: 50%;
+}
+
+.small-card-image img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: fill;
+}
+
+.small-card-title {
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+}

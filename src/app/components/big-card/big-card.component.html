@@ -1,21 +1,19 @@
 <div class="big-card-container">
   <div class="big-card-image">
     <img
-      src="https://th.bing.com/th/id/R.400c4c818ecc8f76508497d8258b59e6?rik=InqVaBkEcOZkew&pid=ImgRaw&r=0"
+      src={{image}}
       alt=""
     />
   </div>
   <div class="big-card-title">
-    <h1><a href="#">Title</a></h1>
+    <h1><a [routerLink]="['content', id]" >{{title}}</a></h1>
   </div>
   <div class="big-card-description">
-    <a href="#"
-      ><p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo
-        deleniti quae ullam nostrum eum vitae praesentium obcaecati
-        exercitationem molestiae vel laborum alias, ad et sapiente eveniet quos!
-        Quae, assumenda?
-      </p></a
+    <a [routerLink]="['content', id]">
+      <p>
+        {{description}}
+      </p>
+    </a
     >
   </div>
 </div>
